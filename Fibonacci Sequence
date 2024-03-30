@@ -2,7 +2,7 @@ entries = input("How many entries?\n")
 number = 1
 prev_number = 0
 fibonacci_sequence = []
-for entry in entries:
+for entry in range(entries):
   fibonacci_sequence.append(prev_number)
   prev_number, number = number, prev_number + number
 print(*fibonacci_sequence)
